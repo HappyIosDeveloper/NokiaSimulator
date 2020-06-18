@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topLogoImageView: UIImageView!
+    @IBOutlet weak var screenImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupPage()
     }
+    
 
-
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    func setupPage() {
+        screenImageView.layer.cornerRadius = 10
+    }
 }
 
