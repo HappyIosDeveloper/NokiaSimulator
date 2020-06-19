@@ -24,6 +24,7 @@
 		386A2E12249D28CB00BBE318 /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E08249D28CB00BBE318 /* 8.mp3 */; };
 		386A2E13249D28CB00BBE318 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E09249D28CB00BBE318 /* 4.mp3 */; };
 		386A2E15249D2F0600BBE318 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E14249D2F0600BBE318 /* beep.mp3 */; };
+		386A2E18249D30BD00BBE318 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E17249D30BD00BBE318 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		386A2E08249D28CB00BBE318 /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
 		386A2E09249D28CB00BBE318 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		386A2E14249D2F0600BBE318 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		386A2E17249D30BD00BBE318 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 		384DDE59249BC43900601267 /* nokia show off */ = {
 			isa = PBXGroup;
 			children = (
-				386A2DFF249D28BE00BBE318 /* Sounds */,
+				386A2E19249D30DA00BBE318 /* Assets */,
 				384DDE5A249BC43900601267 /* AppDelegate.swift */,
 				384DDE5C249BC43900601267 /* SceneDelegate.swift */,
 				384DDE5E249BC43900601267 /* ViewController.swift */,
@@ -106,6 +108,23 @@
 				386A2E00249D28CA00BBE318 /* 9.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		386A2E16249D30AC00BBE318 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				386A2E17249D30BD00BBE318 /* Minecraft.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		386A2E19249D30DA00BBE318 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				386A2E16249D30AC00BBE318 /* Fonts */,
+				386A2DFF249D28BE00BBE318 /* Sounds */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +197,7 @@
 				386A2E0B249D28CB00BBE318 /* 2.mp3 in Resources */,
 				384DDE67249BC43D00601267 /* LaunchScreen.storyboard in Resources */,
 				384DDE64249BC43D00601267 /* Assets.xcassets in Resources */,
+				386A2E18249D30BD00BBE318 /* Minecraft.ttf in Resources */,
 				386A2E15249D2F0600BBE318 /* beep.mp3 in Resources */,
 				384DDE62249BC43A00601267 /* Main.storyboard in Resources */,
 			);

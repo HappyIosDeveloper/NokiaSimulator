@@ -12,10 +12,11 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var topLogoImageView: UIImageView!
+    @IBOutlet weak var dialingLabel: UILabel!
     @IBOutlet weak var screenImageView: UIImageView!
     @IBAction func DialPadButtonAction(_ sender: Any) {
         if let butt = sender as? UIButton {
-            dialPadButtonAction(butt)
+            dial(number: butt.tag)
         }
     }
     @IBAction func leftFunctionButtonAction(_ sender: Any) {
@@ -32,6 +33,11 @@ class ViewController: UIViewController {
     }
     
     var player:AVAudioPlayer!
+    var dialedNumer:[Int]? {
+        didSet {
+            dialingLabel.text = dialedNumer!.description.replacingOccurrences(of: ",", with: "").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,29 +67,55 @@ extension ViewController {
     
     func endCallButtonAction() {
         play("beep")
+        showMainScreen()
     }
     
     func callButtonAction() {
         play("beep")
     }
     
-    func dialPadButtonAction(_ button:UIButton) {
-        switch button.tag {
-        case 1...9: play(button.tag.description)
-        case 11: play("0")
-        default: play((0...9).randomElement()!.description)
+    func dial(number:Int) {
+        showEmptyScreen()
+        switch number {
+        case 1...9:
+            if dialedNumer == nil {
+                dialedNumer = [number]
+            } else {
+                dialedNumer?.append(number)
+            }
+            play(number.description)
+        case 11:
+            play("0")
+            if dialedNumer == nil {
+                dialedNumer = [0]
+            } else {
+                dialedNumer?.append(0)
+            }
+        default:
+            play((0...9).randomElement()!.description)
         }
     }
     
     func play(_ fileName: String) {
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") {
-            do {
-                player = try AVAudioPlayer(contentsOf: url)
-                player.prepareToPlay()
-                player.play()
-            } catch let error as NSError {
-                print(error.description)
+        DispatchQueue.main.async {
+            if let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") {
+                do {
+                    self.player = try AVAudioPlayer(contentsOf: url)
+                    self.player.prepareToPlay()
+                    self.player.play()
+                } catch let error as NSError {
+                    print(error.description)
+                }
             }
         }
+    }
+    
+    func showMainScreen() {
+        screenImageView.image = #imageLiteral(resourceName: "screen")
+        dialedNumer?.removeAll()
+    }
+    
+    func showEmptyScreen() {
+        screenImageView.image = #imageLiteral(resourceName: "Empty Screen")
     }
 }
