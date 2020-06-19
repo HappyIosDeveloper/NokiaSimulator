@@ -13,6 +13,16 @@
 		384DDE62249BC43A00601267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384DDE60249BC43A00601267 /* Main.storyboard */; };
 		384DDE64249BC43D00601267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384DDE63249BC43D00601267 /* Assets.xcassets */; };
 		384DDE67249BC43D00601267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384DDE65249BC43D00601267 /* LaunchScreen.storyboard */; };
+		386A2E0A249D28CB00BBE318 /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E00249D28CA00BBE318 /* 9.mp3 */; };
+		386A2E0B249D28CB00BBE318 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E01249D28CA00BBE318 /* 2.mp3 */; };
+		386A2E0C249D28CB00BBE318 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E02249D28CA00BBE318 /* 3.mp3 */; };
+		386A2E0D249D28CB00BBE318 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E03249D28CA00BBE318 /* 5.mp3 */; };
+		386A2E0E249D28CB00BBE318 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E04249D28CA00BBE318 /* 6.mp3 */; };
+		386A2E0F249D28CB00BBE318 /* 0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E05249D28CA00BBE318 /* 0.mp3 */; };
+		386A2E10249D28CB00BBE318 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E06249D28CA00BBE318 /* 1.mp3 */; };
+		386A2E11249D28CB00BBE318 /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E07249D28CB00BBE318 /* 7.mp3 */; };
+		386A2E12249D28CB00BBE318 /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E08249D28CB00BBE318 /* 8.mp3 */; };
+		386A2E13249D28CB00BBE318 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E09249D28CB00BBE318 /* 4.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		384DDE63249BC43D00601267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384DDE66249BC43D00601267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384DDE68249BC43D00601267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386A2E00249D28CA00BBE318 /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
+		386A2E01249D28CA00BBE318 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		386A2E02249D28CA00BBE318 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		386A2E03249D28CA00BBE318 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		386A2E04249D28CA00BBE318 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		386A2E05249D28CA00BBE318 /* 0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0.mp3; sourceTree = "<group>"; };
+		386A2E06249D28CA00BBE318 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		386A2E07249D28CB00BBE318 /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
+		386A2E08249D28CB00BBE318 /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
+		386A2E09249D28CB00BBE318 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 		384DDE59249BC43900601267 /* nokia show off */ = {
 			isa = PBXGroup;
 			children = (
+				386A2DFF249D28BE00BBE318 /* Sounds */,
 				384DDE5A249BC43900601267 /* AppDelegate.swift */,
 				384DDE5C249BC43900601267 /* SceneDelegate.swift */,
 				384DDE5E249BC43900601267 /* ViewController.swift */,
@@ -65,6 +86,23 @@
 				384DDE68249BC43D00601267 /* Info.plist */,
 			);
 			path = "nokia show off";
+			sourceTree = "<group>";
+		};
+		386A2DFF249D28BE00BBE318 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				386A2E05249D28CA00BBE318 /* 0.mp3 */,
+				386A2E06249D28CA00BBE318 /* 1.mp3 */,
+				386A2E01249D28CA00BBE318 /* 2.mp3 */,
+				386A2E02249D28CA00BBE318 /* 3.mp3 */,
+				386A2E09249D28CB00BBE318 /* 4.mp3 */,
+				386A2E03249D28CA00BBE318 /* 5.mp3 */,
+				386A2E04249D28CA00BBE318 /* 6.mp3 */,
+				386A2E07249D28CB00BBE318 /* 7.mp3 */,
+				386A2E08249D28CB00BBE318 /* 8.mp3 */,
+				386A2E00249D28CA00BBE318 /* 9.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +163,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386A2E11249D28CB00BBE318 /* 7.mp3 in Resources */,
+				386A2E0D249D28CB00BBE318 /* 5.mp3 in Resources */,
+				386A2E0E249D28CB00BBE318 /* 6.mp3 in Resources */,
+				386A2E12249D28CB00BBE318 /* 8.mp3 in Resources */,
+				386A2E0C249D28CB00BBE318 /* 3.mp3 in Resources */,
+				386A2E0F249D28CB00BBE318 /* 0.mp3 in Resources */,
+				386A2E13249D28CB00BBE318 /* 4.mp3 in Resources */,
+				386A2E10249D28CB00BBE318 /* 1.mp3 in Resources */,
+				386A2E0A249D28CB00BBE318 /* 9.mp3 in Resources */,
+				386A2E0B249D28CB00BBE318 /* 2.mp3 in Resources */,
 				384DDE67249BC43D00601267 /* LaunchScreen.storyboard in Resources */,
 				384DDE64249BC43D00601267 /* Assets.xcassets in Resources */,
 				384DDE62249BC43A00601267 /* Main.storyboard in Resources */,

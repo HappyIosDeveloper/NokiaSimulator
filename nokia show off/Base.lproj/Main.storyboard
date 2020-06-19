@@ -37,18 +37,42 @@
                                             <constraint firstAttribute="width" secondItem="w0j-tW-oyG" secondAttribute="height" multiplier="2:1" id="iZa-bR-215"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-IJ-5CB">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50.5"/>
+                                        <connections>
+                                            <action selector="leftFunctionButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDU-1e-Kce"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="answer" translatesAutoresizingMaskIntoConstraints="NO" id="2vw-5S-QCs">
                                         <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-1e-dPv">
+                                        <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
+                                        <connections>
+                                            <action selector="callButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaE-Pd-YBj"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="function" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-44-plV">
                                         <rect key="frame" x="265.5" y="0.0" width="100" height="50.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ngO-44-plV" secondAttribute="height" multiplier="2:1" id="Ks4-M1-QXz"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcX-pA-B3x">
+                                        <rect key="frame" x="265.5" y="0.0" width="100" height="50.5"/>
+                                        <connections>
+                                            <action selector="rightFunctionButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PER-Mj-Y8f"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="end" translatesAutoresizingMaskIntoConstraints="NO" id="xec-Ze-BBb">
                                         <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGO-Eq-F5f">
+                                        <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
+                                        <connections>
+                                            <action selector="endCallButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRN-j9-VcQ"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Biggy" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-b6-Tem">
                                         <rect key="frame" x="131" y="0.0" width="112" height="112.5"/>
                                         <constraints>
@@ -63,20 +87,36 @@
                                     <constraint firstItem="ngO-44-plV" firstAttribute="trailing" secondItem="xec-Ze-BBb" secondAttribute="trailing" id="3V5-aA-8BY"/>
                                     <constraint firstAttribute="bottom" secondItem="4SB-b6-Tem" secondAttribute="bottom" id="4Fz-R2-jD3"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="height" secondItem="2vw-5S-QCs" secondAttribute="height" id="5iO-3b-d2B"/>
+                                    <constraint firstItem="Dct-1e-dPv" firstAttribute="bottom" secondItem="2vw-5S-QCs" secondAttribute="bottom" id="DxI-O0-huC"/>
                                     <constraint firstItem="4SB-b6-Tem" firstAttribute="top" secondItem="gsB-kw-KAL" secondAttribute="top" id="FPT-Lh-j1s"/>
+                                    <constraint firstItem="Dct-1e-dPv" firstAttribute="leading" secondItem="2vw-5S-QCs" secondAttribute="leading" id="Fti-sI-JFa"/>
+                                    <constraint firstItem="yGO-Eq-F5f" firstAttribute="trailing" secondItem="xec-Ze-BBb" secondAttribute="trailing" id="GMf-1I-OWe"/>
+                                    <constraint firstItem="yGO-Eq-F5f" firstAttribute="bottom" secondItem="xec-Ze-BBb" secondAttribute="bottom" id="ILR-Uo-JnT"/>
+                                    <constraint firstItem="Dct-1e-dPv" firstAttribute="trailing" secondItem="2vw-5S-QCs" secondAttribute="trailing" id="K3C-fa-IXQ"/>
                                     <constraint firstItem="ngO-44-plV" firstAttribute="top" secondItem="w0j-tW-oyG" secondAttribute="top" id="K7c-GC-Kzf"/>
                                     <constraint firstItem="ngO-44-plV" firstAttribute="leading" secondItem="xec-Ze-BBb" secondAttribute="leading" id="Kzk-CG-SwF"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="leading" secondItem="2vw-5S-QCs" secondAttribute="leading" id="MWT-eC-9FB"/>
                                     <constraint firstItem="ngO-44-plV" firstAttribute="height" secondItem="xec-Ze-BBb" secondAttribute="height" id="Mrq-Ex-cU2"/>
                                     <constraint firstItem="4SB-b6-Tem" firstAttribute="centerY" secondItem="gsB-kw-KAL" secondAttribute="centerY" id="QuF-RK-PUd"/>
+                                    <constraint firstItem="PcX-pA-B3x" firstAttribute="top" secondItem="ngO-44-plV" secondAttribute="top" id="SJg-hE-4s7"/>
+                                    <constraint firstItem="yGO-Eq-F5f" firstAttribute="leading" secondItem="xec-Ze-BBb" secondAttribute="leading" id="Xxi-uK-6ID"/>
                                     <constraint firstItem="4SB-b6-Tem" firstAttribute="centerX" secondItem="gsB-kw-KAL" secondAttribute="centerX" id="Ze7-Vx-V8j"/>
                                     <constraint firstAttribute="trailing" secondItem="ngO-44-plV" secondAttribute="trailing" constant="8.5" id="a6N-KY-WKd"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="width" secondItem="2vw-5S-QCs" secondAttribute="width" id="aVy-N4-gBw"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="top" secondItem="gsB-kw-KAL" secondAttribute="top" id="dQh-VI-PKi"/>
                                     <constraint firstAttribute="bottom" secondItem="2vw-5S-QCs" secondAttribute="bottom" id="emX-gs-dFn"/>
+                                    <constraint firstItem="JO2-IJ-5CB" firstAttribute="trailing" secondItem="w0j-tW-oyG" secondAttribute="trailing" id="g9e-XL-qzS"/>
+                                    <constraint firstItem="PcX-pA-B3x" firstAttribute="bottom" secondItem="ngO-44-plV" secondAttribute="bottom" id="hm4-iw-UQB"/>
+                                    <constraint firstItem="JO2-IJ-5CB" firstAttribute="leading" secondItem="w0j-tW-oyG" secondAttribute="leading" id="iCE-5g-91q"/>
+                                    <constraint firstItem="yGO-Eq-F5f" firstAttribute="top" secondItem="xec-Ze-BBb" secondAttribute="top" id="iNS-uV-iNA"/>
+                                    <constraint firstItem="PcX-pA-B3x" firstAttribute="leading" secondItem="ngO-44-plV" secondAttribute="leading" id="luu-cy-Nzz"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="trailing" secondItem="2vw-5S-QCs" secondAttribute="trailing" id="lvA-mG-Uy5"/>
+                                    <constraint firstItem="PcX-pA-B3x" firstAttribute="trailing" secondItem="ngO-44-plV" secondAttribute="trailing" id="n1z-na-wD4"/>
+                                    <constraint firstItem="JO2-IJ-5CB" firstAttribute="top" secondItem="w0j-tW-oyG" secondAttribute="top" id="pLw-3Q-fiE"/>
+                                    <constraint firstItem="Dct-1e-dPv" firstAttribute="top" secondItem="2vw-5S-QCs" secondAttribute="top" id="r0p-wv-hHG"/>
                                     <constraint firstItem="w0j-tW-oyG" firstAttribute="leading" secondItem="gsB-kw-KAL" secondAttribute="leading" id="ssa-19-2f4"/>
                                     <constraint firstItem="2vw-5S-QCs" firstAttribute="top" secondItem="w0j-tW-oyG" secondAttribute="bottom" constant="12" id="tKI-EO-7vf"/>
+                                    <constraint firstItem="JO2-IJ-5CB" firstAttribute="bottom" secondItem="w0j-tW-oyG" secondAttribute="bottom" id="tkM-3x-DW1"/>
                                     <constraint firstAttribute="width" secondItem="gsB-kw-KAL" secondAttribute="height" multiplier="10:3" id="ucX-sE-b7Z"/>
                                     <constraint firstAttribute="bottom" secondItem="xec-Ze-BBb" secondAttribute="bottom" id="w7f-53-eNk"/>
                                 </constraints>
@@ -157,13 +197,150 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cfK-E5-m9M">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="303.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AYs-NT-B3c">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="68.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc6-rO-qRF">
+                                                        <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="SuU-PC-uih"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAf-a2-daa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-CY-zQ4">
+                                                        <rect key="frame" x="134.5" y="14" width="105" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="X8f-sE-xBT"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAh-3U-Hl9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82n-pU-Jwp">
+                                                        <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="FeH-iZ-MUB"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSA-OH-vLH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-gJ-iwF">
+                                                <rect key="frame" x="0.0" y="78.5" width="374" height="68"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kum-yY-LEX">
+                                                        <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="RZm-rI-HVY"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxv-yy-SWs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-FV-cfG">
+                                                        <rect key="frame" x="134.5" y="14" width="105" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Hnp-ah-MTJ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhV-hj-9SY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-8I-QTr">
+                                                        <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="YXg-qP-4Gf"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDv-g4-FA4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ttw-eB-9cb">
+                                                <rect key="frame" x="0.0" y="156.5" width="374" height="68.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-Fb-4dK">
+                                                        <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="VGk-7e-Rr8"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yE-ug-pel"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jv-zk-bnI">
+                                                        <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="MDn-NQ-0Bv"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DcN-S9-muj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-j3-pzu">
+                                                        <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Fcg-FU-r1d"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehD-VJ-cRr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="alS-Vu-Nia">
+                                                <rect key="frame" x="0.0" y="235" width="374" height="68.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-at-60P">
+                                                        <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="SBf-x8-E5F"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccx-1B-rOt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwy-ML-mOY">
+                                                        <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="LyG-RD-b1M"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Jq-nT-0wI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-3u-96i">
+                                                        <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="z5g-Fl-1EH"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFB-aH-J0e"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="fJO-AT-Obd" secondAttribute="bottom" id="2sy-cE-XHV"/>
                                     <constraint firstAttribute="trailing" secondItem="fJO-AT-Obd" secondAttribute="trailing" id="7eN-vH-L5u"/>
                                     <constraint firstItem="fJO-AT-Obd" firstAttribute="top" secondItem="uw2-Rr-ZVt" secondAttribute="top" id="C2B-0z-Kax"/>
+                                    <constraint firstItem="cfK-E5-m9M" firstAttribute="leading" secondItem="fJO-AT-Obd" secondAttribute="leading" id="LjI-UJ-tOp"/>
+                                    <constraint firstItem="cfK-E5-m9M" firstAttribute="trailing" secondItem="fJO-AT-Obd" secondAttribute="trailing" id="TfF-a4-FXy"/>
                                     <constraint firstItem="fJO-AT-Obd" firstAttribute="leading" secondItem="uw2-Rr-ZVt" secondAttribute="leading" id="Upk-XT-VW3"/>
+                                    <constraint firstItem="cfK-E5-m9M" firstAttribute="top" secondItem="fJO-AT-Obd" secondAttribute="top" id="coM-qN-3yG"/>
+                                    <constraint firstItem="cfK-E5-m9M" firstAttribute="bottom" secondItem="fJO-AT-Obd" secondAttribute="bottom" id="hnf-zD-oal"/>
                                 </constraints>
                             </view>
                         </subviews>
