@@ -23,6 +23,7 @@
 		386A2E11249D28CB00BBE318 /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E07249D28CB00BBE318 /* 7.mp3 */; };
 		386A2E12249D28CB00BBE318 /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E08249D28CB00BBE318 /* 8.mp3 */; };
 		386A2E13249D28CB00BBE318 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E09249D28CB00BBE318 /* 4.mp3 */; };
+		386A2E15249D2F0600BBE318 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E14249D2F0600BBE318 /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		386A2E07249D28CB00BBE318 /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
 		386A2E08249D28CB00BBE318 /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
 		386A2E09249D28CB00BBE318 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		386A2E14249D2F0600BBE318 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		386A2DFF249D28BE00BBE318 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				386A2E14249D2F0600BBE318 /* beep.mp3 */,
 				386A2E05249D28CA00BBE318 /* 0.mp3 */,
 				386A2E06249D28CA00BBE318 /* 1.mp3 */,
 				386A2E01249D28CA00BBE318 /* 2.mp3 */,
@@ -175,6 +178,7 @@
 				386A2E0B249D28CB00BBE318 /* 2.mp3 in Resources */,
 				384DDE67249BC43D00601267 /* LaunchScreen.storyboard in Resources */,
 				384DDE64249BC43D00601267 /* Assets.xcassets in Resources */,
+				386A2E15249D2F0600BBE318 /* beep.mp3 in Resources */,
 				384DDE62249BC43A00601267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

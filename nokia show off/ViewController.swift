@@ -19,12 +19,16 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func leftFunctionButtonAction(_ sender: Any) {
+        leftFunctionButtonAction()
     }
     @IBAction func rightFunctionButtonAction(_ sender: Any) {
+        rightFunctionButtonAction()
     }
     @IBAction func callButtonAction(_ sender: Any) {
+        callButtonAction()
     }
     @IBAction func endCallButtonAction(_ sender: Any) {
+        endCallButtonAction()
     }
     
     var player:AVAudioPlayer!
@@ -46,6 +50,22 @@ class ViewController: UIViewController {
 
 // MARK: - Action Function
 extension ViewController {
+    
+    func leftFunctionButtonAction() {
+        play("beep")
+    }
+    
+    func rightFunctionButtonAction() {
+        play("beep")
+    }
+    
+    func endCallButtonAction() {
+        play("beep")
+    }
+    
+    func callButtonAction() {
+        play("beep")
+    }
     
     func dialPadButtonAction(_ button:UIButton) {
         switch button.tag {
