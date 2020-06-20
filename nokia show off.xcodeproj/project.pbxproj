@@ -25,6 +25,10 @@
 		386A2E13249D28CB00BBE318 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E09249D28CB00BBE318 /* 4.mp3 */; };
 		386A2E15249D2F0600BBE318 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E14249D2F0600BBE318 /* beep.mp3 */; };
 		386A2E18249D30BD00BBE318 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 386A2E17249D30BD00BBE318 /* Minecraft.ttf */; };
+		38AAEECD249E5CFC00847DE4 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAEECC249E5CFC00847DE4 /* GeneralExtensions.swift */; };
+		38AAEECF249E5D2F00847DE4 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAEECE249E5D2F00847DE4 /* UIViewControllerExtensions.swift */; };
+		38AAEED2249E5DB200847DE4 /* ViewControllerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAEED1249E5DB200847DE4 /* ViewControllerActions.swift */; };
+		38AAEED4249E5E2700847DE4 /* ViewControllerSetupFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AAEED3249E5E2700847DE4 /* ViewControllerSetupFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		386A2E09249D28CB00BBE318 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		386A2E14249D2F0600BBE318 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		386A2E17249D30BD00BBE318 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		38AAEECC249E5CFC00847DE4 /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		38AAEECE249E5D2F00847DE4 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		38AAEED1249E5DB200847DE4 /* ViewControllerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerActions.swift; sourceTree = "<group>"; };
+		38AAEED3249E5E2700847DE4 /* ViewControllerSetupFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSetupFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +88,11 @@
 		384DDE59249BC43900601267 /* nokia show off */ = {
 			isa = PBXGroup;
 			children = (
+				38AAEECB249E5CD900847DE4 /* Helpers */,
 				386A2E19249D30DA00BBE318 /* Assets */,
+				38AAEED0249E5D9900847DE4 /* Main Page */,
 				384DDE5A249BC43900601267 /* AppDelegate.swift */,
 				384DDE5C249BC43900601267 /* SceneDelegate.swift */,
-				384DDE5E249BC43900601267 /* ViewController.swift */,
 				384DDE60249BC43A00601267 /* Main.storyboard */,
 				384DDE63249BC43D00601267 /* Assets.xcassets */,
 				384DDE65249BC43D00601267 /* LaunchScreen.storyboard */,
@@ -125,6 +134,25 @@
 				386A2DFF249D28BE00BBE318 /* Sounds */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		38AAEECB249E5CD900847DE4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				38AAEECC249E5CFC00847DE4 /* GeneralExtensions.swift */,
+				38AAEECE249E5D2F00847DE4 /* UIViewControllerExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		38AAEED0249E5D9900847DE4 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				384DDE5E249BC43900601267 /* ViewController.swift */,
+				38AAEED1249E5DB200847DE4 /* ViewControllerActions.swift */,
+				38AAEED3249E5E2700847DE4 /* ViewControllerSetupFunctions.swift */,
+			);
+			path = "Main Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38AAEED4249E5E2700847DE4 /* ViewControllerSetupFunctions.swift in Sources */,
+				38AAEED2249E5DB200847DE4 /* ViewControllerActions.swift in Sources */,
+				38AAEECD249E5CFC00847DE4 /* GeneralExtensions.swift in Sources */,
 				384DDE5F249BC43900601267 /* ViewController.swift in Sources */,
+				38AAEECF249E5D2F00847DE4 /* UIViewControllerExtensions.swift in Sources */,
 				384DDE5B249BC43900601267 /* AppDelegate.swift in Sources */,
 				384DDE5D249BC43900601267 /* SceneDelegate.swift in Sources */,
 			);
