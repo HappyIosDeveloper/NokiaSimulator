@@ -27,12 +27,44 @@
                                     <constraint firstAttribute="width" secondItem="LoS-b4-oDf" secondAttribute="height" multiplier="80:17" id="agW-FE-eJp"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="MZo-D5-hVk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Empty Screen" translatesAutoresizingMaskIntoConstraints="NO" id="MZo-D5-hVk">
                                 <rect key="frame" x="30" y="68" width="354" height="354"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MZo-D5-hVk" secondAttribute="height" id="33Q-tT-Ild"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="antena" translatesAutoresizingMaskIntoConstraints="NO" id="vyS-K4-iVB">
+                                <rect key="frame" x="35" y="116.5" width="25" height="265.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9yC-NM-rRg" userLabel="Battery">
+                                <rect key="frame" x="353" y="116.5" width="25" height="265.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery4" translatesAutoresizingMaskIntoConstraints="NO" id="uZ8-o5-HvW">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="31.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery4" translatesAutoresizingMaskIntoConstraints="NO" id="xQE-lg-HqS">
+                                        <rect key="frame" x="0.0" y="39.5" width="25" height="31"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery3" translatesAutoresizingMaskIntoConstraints="NO" id="RV7-Ah-3CZ">
+                                        <rect key="frame" x="0.0" y="78.5" width="25" height="31"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery3" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-ld-bRs">
+                                        <rect key="frame" x="0.0" y="117.5" width="25" height="31"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery2" translatesAutoresizingMaskIntoConstraints="NO" id="Dqh-oH-3zS">
+                                        <rect key="frame" x="0.0" y="156.5" width="25" height="31"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery2" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-He-d3V">
+                                        <rect key="frame" x="0.0" y="195.5" width="25" height="31"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery1" translatesAutoresizingMaskIntoConstraints="NO" id="msI-Nm-D4i">
+                                        <rect key="frame" x="0.0" y="234.5" width="25" height="31"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="OmU-Yv-fMl"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XoQ-2x-dZc">
                                 <rect key="frame" x="50" y="352" width="324" height="60"/>
                                 <constraints>
@@ -357,11 +389,49 @@
                                     <constraint firstItem="cfK-E5-m9M" firstAttribute="bottom" secondItem="fJO-AT-Obd" secondAttribute="bottom" id="hnf-zD-oal"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-e2-doh">
+                                <rect key="frame" x="312.5" y="72" width="67.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yAs-Ne-VnL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M3E-zj-dm9">
+                                <rect key="frame" x="34" y="392" width="68.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QUc-lA-JYM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="28"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q1N-YS-Jvp">
+                                <rect key="frame" x="255.5" y="392" width="124.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MXW-3f-CGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="28"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nokia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oUj-Dk-QlJ">
+                                <rect key="frame" x="165" y="230" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wnV-1t-D6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="32"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uw2-Rr-ZVt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1nu-5x-DX9"/>
                             <constraint firstItem="gsB-kw-KAL" firstAttribute="leading" secondItem="MZo-D5-hVk" secondAttribute="leading" constant="-10" id="2xd-oH-wu9"/>
+                            <constraint firstItem="Q1N-YS-Jvp" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="-4" id="4gf-3P-Yw7"/>
+                            <constraint firstItem="9yC-NM-rRg" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="-6" id="4tm-YG-7Q2"/>
                             <constraint firstItem="XoQ-2x-dZc" firstAttribute="leading" secondItem="MZo-D5-hVk" secondAttribute="leading" constant="20" id="550-fQ-iDY"/>
                             <constraint firstItem="XoQ-2x-dZc" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="-10" id="5ZJ-S9-K39"/>
                             <constraint firstItem="uw2-Rr-ZVt" firstAttribute="trailing" secondItem="gsB-kw-KAL" secondAttribute="trailing" id="5qA-KX-rpx"/>
@@ -371,18 +441,43 @@
                             <constraint firstItem="MZo-D5-hVk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Bt3-Mm-jvB"/>
                             <constraint firstItem="LoS-b4-oDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ISG-1A-MFb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LoS-b4-oDf" secondAttribute="trailing" constant="50" id="J3M-Ya-nGD"/>
+                            <constraint firstItem="oUj-Dk-QlJ" firstAttribute="centerX" secondItem="MZo-D5-hVk" secondAttribute="centerX" id="Jtq-95-2HX"/>
+                            <constraint firstItem="9yC-NM-rRg" firstAttribute="bottom" secondItem="MZo-D5-hVk" secondAttribute="bottom" constant="-40" id="LZl-hP-dO8"/>
+                            <constraint firstItem="vyS-K4-iVB" firstAttribute="width" secondItem="9yC-NM-rRg" secondAttribute="width" id="R9M-2T-Z1y"/>
+                            <constraint firstItem="pDd-e2-doh" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="-4" id="TvS-XJ-8uc"/>
+                            <constraint firstItem="oUj-Dk-QlJ" firstAttribute="centerY" secondItem="MZo-D5-hVk" secondAttribute="centerY" id="Ujc-ve-g5Y"/>
                             <constraint firstItem="XoQ-2x-dZc" firstAttribute="bottom" secondItem="MZo-D5-hVk" secondAttribute="bottom" constant="-10" id="axo-aj-pPV"/>
+                            <constraint firstItem="vyS-K4-iVB" firstAttribute="bottom" secondItem="9yC-NM-rRg" secondAttribute="bottom" id="bCb-vw-4uD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="30" id="eLk-aj-WzD"/>
+                            <constraint firstItem="9yC-NM-rRg" firstAttribute="height" secondItem="MZo-D5-hVk" secondAttribute="height" multiplier="0.75" id="kJd-tJ-gmB"/>
+                            <constraint firstItem="M3E-zj-dm9" firstAttribute="bottom" secondItem="MZo-D5-hVk" secondAttribute="bottom" id="lAd-WL-m0g"/>
                             <constraint firstItem="gsB-kw-KAL" firstAttribute="trailing" secondItem="MZo-D5-hVk" secondAttribute="trailing" constant="10" id="pQD-9o-7jS"/>
+                            <constraint firstItem="vyS-K4-iVB" firstAttribute="leading" secondItem="MZo-D5-hVk" secondAttribute="leading" constant="5" id="pfD-of-X32"/>
+                            <constraint firstItem="Q1N-YS-Jvp" firstAttribute="centerY" secondItem="M3E-zj-dm9" secondAttribute="centerY" id="tAD-O2-Gko"/>
+                            <constraint firstItem="M3E-zj-dm9" firstAttribute="leading" secondItem="MZo-D5-hVk" secondAttribute="leading" constant="4" id="tgI-6W-o27"/>
+                            <constraint firstItem="vyS-K4-iVB" firstAttribute="top" secondItem="9yC-NM-rRg" secondAttribute="top" id="vIz-z5-hSe"/>
+                            <constraint firstItem="pDd-e2-doh" firstAttribute="top" secondItem="MZo-D5-hVk" secondAttribute="top" constant="4" id="vTU-4D-nvl"/>
                             <constraint firstItem="LoS-b4-oDf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="firstBaseline" constant="10" id="vf0-Nk-wZl"/>
                             <constraint firstItem="gsB-kw-KAL" firstAttribute="top" secondItem="MZo-D5-hVk" secondAttribute="bottom" constant="10" id="wt7-bg-q7m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="antenaImageView" destination="vyS-K4-iVB" id="NwX-g5-089"/>
+                        <outlet property="centerNokiaLabel" destination="oUj-Dk-QlJ" id="Dne-BZ-vNd"/>
+                        <outlet property="contactslabel" destination="Q1N-YS-Jvp" id="dg7-gN-SgX"/>
                         <outlet property="dialingLabel" destination="XoQ-2x-dZc" id="TTw-P5-tHT"/>
+                        <outlet property="menuLabel" destination="M3E-zj-dm9" id="OZo-xD-L77"/>
                         <outlet property="screenImageView" destination="MZo-D5-hVk" id="gIe-AQ-du1"/>
+                        <outlet property="topClockLabel" destination="pDd-e2-doh" id="k5F-Aa-206"/>
                         <outlet property="topLogoImageView" destination="LoS-b4-oDf" id="6Ve-L1-40U"/>
+                        <outletCollection property="batteryImageViews" destination="uZ8-o5-HvW" collectionClass="NSMutableArray" id="WHY-zB-NeV"/>
+                        <outletCollection property="batteryImageViews" destination="xQE-lg-HqS" collectionClass="NSMutableArray" id="vSC-Vt-hZM"/>
+                        <outletCollection property="batteryImageViews" destination="RV7-Ah-3CZ" collectionClass="NSMutableArray" id="8IN-Hh-uKA"/>
+                        <outletCollection property="batteryImageViews" destination="8PL-ld-bRs" collectionClass="NSMutableArray" id="8QN-1E-g6G"/>
+                        <outletCollection property="batteryImageViews" destination="Dqh-oH-3zS" collectionClass="NSMutableArray" id="Ee0-eb-KOf"/>
+                        <outletCollection property="batteryImageViews" destination="U4C-He-d3V" collectionClass="NSMutableArray" id="Ht0-97-dP6"/>
+                        <outletCollection property="batteryImageViews" destination="msI-Nm-D4i" collectionClass="NSMutableArray" id="KME-A0-3mA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -404,10 +499,15 @@
         <image name="8" width="82" height="40"/>
         <image name="9" width="82" height="40"/>
         <image name="Biggy" width="70" height="70"/>
+        <image name="Empty Screen" width="512" height="512"/>
         <image name="answer" width="70" height="40"/>
+        <image name="antena" width="15.5" height="150"/>
+        <image name="battery1" width="11.5" height="19"/>
+        <image name="battery2" width="10" height="16.5"/>
+        <image name="battery3" width="10" height="16.5"/>
+        <image name="battery4" width="10" height="16"/>
         <image name="end" width="70" height="40"/>
         <image name="function" width="70" height="40"/>
         <image name="logo" width="640" height="360"/>
-        <image name="screen" width="256" height="256"/>
     </resources>
 </document>

@@ -11,6 +11,11 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var centerNokiaLabel: UILabel!
+    @IBOutlet weak var topClockLabel: UILabel!
+    @IBOutlet weak var antenaImageView: UIImageView!
+    @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var contactslabel: UILabel!
     @IBOutlet weak var topLogoImageView: UIImageView!
     @IBOutlet weak var dialingLabel: UILabel!
     @IBOutlet weak var screenImageView: UIImageView!
@@ -31,6 +36,8 @@ class ViewController: UIViewController {
     @IBAction func endCallButtonAction(_ sender: Any) {
         endCallButtonAction()
     }
+    @IBOutlet var batteryImageViews: [UIImageView]!
+    
     
     lazy var contacts = PhoneContacts.getContacts()
     var player:AVAudioPlayer!

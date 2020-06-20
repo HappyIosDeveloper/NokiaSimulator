@@ -14,14 +14,77 @@ extension ViewController {
         play("beep")
         screenImageView.layer.cornerRadius = 10
         setupBatteryMonitor()
+        updateBatteryStatus()
+        setupTopClock()
     }
     
     func showMainScreen() {
-        screenImageView.image = #imageLiteral(resourceName: "screen")
         dialedNumer?.removeAll()
+        updateBatteryStatus()
+        antenaImageView.isHidden = false
+        centerNokiaLabel.isHidden = false
+        menuLabel.isHidden = false
+        contactslabel.isHidden = false
     }
     
     func showEmptyScreen() {
-        screenImageView.image = #imageLiteral(resourceName: "Empty Screen")
+        batteryImageViews.forEach({$0.isHidden = true})
+        antenaImageView.isHidden = true
+        centerNokiaLabel.isHidden = true
+        menuLabel.isHidden = true
+        contactslabel.isHidden = true
+    }
+    
+    func updateBatteryStatus() {
+        batteryImageViews = batteryImageViews.sorted(by: {$0.tag < $1.tag})
+        switch batteryLevel {
+        case 0...0.3:
+            fillBatteryLevelTill(2)
+        case 0.3...0.4:
+            fillBatteryLevelTill(2)
+        case 0.4...0.5:
+            fillBatteryLevelTill(3)
+        case 0.5...0.6:
+            fillBatteryLevelTill(4)
+        case 0.6...0.7:
+            fillBatteryLevelTill(5)
+        case 0.7...1:
+            fillBatteryLevelTill(6)
+        default: break
+        }
+    }
+    
+    private func fillBatteryLevelTill(_ number:Int) {
+        batteryImageViews.forEach({$0.alpha = 0})
+        for i in 0...number {
+            for j in 0..<batteryImageViews.count {
+                if i == j { // avoides unwanted crashes
+                    batteryImageViews[i].alpha = 1
+                }
+            }
+        }
+    }
+    
+    // MARK: - Top Clock
+    func setupTopClock() {
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fillTopClockLabel), userInfo: nil, repeats: true)
+    }
+    
+    @objc func fillTopClockLabel() {
+        let date = Date()
+        let calendar = Calendar.current
+        var hour = calendar.component(.hour, from: date).description
+        var minutes = calendar.component(.minute, from: date).description
+        if Int(hour)! < 10 {
+            hour = "0" + hour
+        }
+        if Int(minutes)! < 10 {
+            minutes = "0" + minutes
+        }
+        if topClockLabel.text!.contains(":") {
+            topClockLabel.text = "\(hour)      \(minutes)"
+        } else {
+            topClockLabel.text = "\(hour):\(minutes)"
+        }
     }
 }
