@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         endCallButtonAction()
     }
     
+    lazy var contacts = PhoneContacts.getContacts()
     var player:AVAudioPlayer!
     var dialedNumer:[Int]? {
         didSet {

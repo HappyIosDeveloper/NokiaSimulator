@@ -30,6 +30,7 @@ extension ViewController {
         callNumber(dialingLabel.text!)
     }
     
+    // MARK: - Bullshits
     func dial(number:Int) {
         showEmptyScreen()
         switch number {
