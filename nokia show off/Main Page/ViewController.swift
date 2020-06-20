@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     
     lazy var contacts = PhoneContacts.getContacts()
     var player:AVAudioPlayer!
+    var batteryLevel: Float { UIDevice.current.batteryLevel }
+    var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
     var dialedNumer:[Int]? {
         didSet {
             dialingLabel.text = dialedNumer!.description.nakedNumber()

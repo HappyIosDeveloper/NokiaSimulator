@@ -66,4 +66,25 @@ extension ViewController {
             }
         }
     }
+    
+    // MARK: - Battery Functions
+    func setupBatteryMonitor() {
+        UIDevice.current.isBatteryMonitoringEnabled = true
+        NotificationCenter.default.addObserver(self, selector: #selector(batteryLevelDidChange), name: UIDevice.batteryLevelDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(batteryStateDidChange), name: UIDevice.batteryStateDidChangeNotification, object: nil)
+    }
+    
+    @objc func batteryLevelDidChange(_ notification: Notification) {
+        print("batteryLevel: \(batteryLevel)")
+    }
+
+    @objc func batteryStateDidChange(_ notification: Notification) {
+        switch batteryState {
+        case .unplugged, .unknown:
+            print("not charging")
+        case .charging, .full:
+            print("charging or full")
+        @unknown default: break
+        }
+    }
 }

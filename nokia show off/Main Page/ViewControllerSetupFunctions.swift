@@ -11,7 +11,9 @@ import UIKit
 extension ViewController {
     
     func setupPage() {
+        play("beep")
         screenImageView.layer.cornerRadius = 10
+        setupBatteryMonitor()
     }
     
     func showMainScreen() {
