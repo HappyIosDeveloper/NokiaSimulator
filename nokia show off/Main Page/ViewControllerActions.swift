@@ -18,9 +18,10 @@ extension ViewController {
     
     func rightFunctionButtonAction() {
         play("beep")
+        gotoContacts()
     }
     
-    func endCallButtonAction() {
+    @objc func endCallButtonAction() {
         play("beep")
         showMainScreen()
     }
@@ -31,6 +32,11 @@ extension ViewController {
     }
     
     // MARK: - Bullshits
+    func gotoContacts() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ContactsViewController") as! ContactsViewController
+        switchControllerTo(vc)
+    }
+    
     func dial(number:Int) {
         showEmptyScreen()
         switch number {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3812821C24A8E96A00E1A655 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3812821B24A8E96A00E1A655 /* ContactsViewController.swift */; };
 		384DDE5B249BC43900601267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DDE5A249BC43900601267 /* AppDelegate.swift */; };
 		384DDE5D249BC43900601267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DDE5C249BC43900601267 /* SceneDelegate.swift */; };
 		384DDE5F249BC43900601267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DDE5E249BC43900601267 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3812821B24A8E96A00E1A655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		384DDE57249BC43900601267 /* nokia show off.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nokia show off.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384DDE5A249BC43900601267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384DDE5C249BC43900601267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3812821A24A8E94A00E1A655 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				3812821B24A8E96A00E1A655 /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		384DDE4E249BC43900601267 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				38AAEECB249E5CD900847DE4 /* Helpers */,
 				386A2E19249D30DA00BBE318 /* Assets */,
 				38AAEED0249E5D9900847DE4 /* Main Page */,
+				3812821A24A8E94A00E1A655 /* Contacts */,
 				384DDE5A249BC43900601267 /* AppDelegate.swift */,
 				384DDE5C249BC43900601267 /* SceneDelegate.swift */,
 				384DDE60249BC43A00601267 /* Main.storyboard */,
@@ -246,6 +257,7 @@
 				38AAEED2249E5DB200847DE4 /* ViewControllerActions.swift in Sources */,
 				38AAEECD249E5CFC00847DE4 /* GeneralExtensions.swift in Sources */,
 				384DDE5F249BC43900601267 /* ViewController.swift in Sources */,
+				3812821C24A8E96A00E1A655 /* ContactsViewController.swift in Sources */,
 				38AAEECF249E5D2F00847DE4 /* UIViewControllerExtensions.swift in Sources */,
 				384DDE5B249BC43900601267 /* AppDelegate.swift in Sources */,
 				384DDE5D249BC43900601267 /* SceneDelegate.swift in Sources */,

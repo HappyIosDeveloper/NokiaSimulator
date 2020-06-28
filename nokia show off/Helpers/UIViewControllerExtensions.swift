@@ -19,4 +19,9 @@ extension UIViewController {
             application.open(url, options: [:], completionHandler: nil)
         }
     }
+    
+    func switchControllerTo(_ controller: UIViewController) {
+        self.view.window?.rootViewController = controller
+        self.view.window?.makeKeyAndVisible()
+    }
 }

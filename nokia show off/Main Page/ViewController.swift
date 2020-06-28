@@ -37,15 +37,15 @@ class ViewController: UIViewController {
         endCallButtonAction()
     }
     @IBOutlet var batteryImageViews: [UIImageView]!
-    
-    
-    lazy var contacts = PhoneContacts.getContacts()
+        
     var player:AVAudioPlayer!
     var batteryLevel: Float { UIDevice.current.batteryLevel }
     var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
     var dialedNumer:[Int]? {
         didSet {
-            dialingLabel.text = dialedNumer!.description.nakedNumber()
+            if let dialer = dialedNumer {
+                dialingLabel.text = dialer.description.nakedNumber()
+            }
         }
     }
     

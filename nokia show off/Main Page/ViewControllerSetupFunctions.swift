@@ -13,6 +13,7 @@ extension ViewController {
     func setupPage() {
         play("beep")
         screenImageView.layer.cornerRadius = 10
+        navigationController?.setNavigationBarHidden(true, animated: true)
         setupBatteryMonitor()
         updateBatteryStatus()
         setupTopClock()
@@ -109,9 +110,5 @@ extension ViewController {
                 }
             }
         }
-    }
-    
-    func stopBatteryChargingAnimation() {
-        
     }
 }
