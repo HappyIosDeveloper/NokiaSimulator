@@ -131,7 +131,7 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.textLabel?.font = centerNokiaLabel.font.withSize(34)
         let name = contact.getName()
-        if name.isContainsLetters() {
+        if name.isEnglish() {
             cell.textLabel?.text = name
         } else {
             cell.textLabel?.text = contact.getPhone()
