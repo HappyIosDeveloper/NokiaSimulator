@@ -35,7 +35,6 @@ extension ViewController {
     func gotoContacts() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ContactsViewController") as! ContactsViewController
         switchControllerTo(vc)
-        vc.topClockLabel.text = self.topClockLabel.text!
     }
     
     @objc func dial(number:Int) {

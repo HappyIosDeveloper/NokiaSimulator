@@ -39,6 +39,7 @@ extension ViewController {
     
     // MARK: - Top Clock
     func setupTopClock() {
+        fillTopClockLabel()
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fillTopClockLabel), userInfo: nil, repeats: true)
     }
     

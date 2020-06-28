@@ -601,13 +601,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TZ-Bo-Of8">
                                         <rect key="frame" x="131" y="0.0" width="112" height="56.5"/>
                                         <connections>
-                                            <action selector="topArrowButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="wNM-w3-Yp8"/>
+                                            <action selector="topArrowButtonTouchDownAction:" destination="pw0-Gi-ThV" eventType="touchDown" id="zEN-Tp-W6m"/>
+                                            <action selector="topArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchCancel" id="VZ5-JK-8b8"/>
+                                            <action selector="topArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="editingDidEnd" id="l6N-wg-mKD"/>
+                                            <action selector="topArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchUpOutside" id="sUz-sg-c93"/>
+                                            <action selector="topArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="uKj-fp-5HP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-c3-KB5">
                                         <rect key="frame" x="131" y="56.5" width="112" height="56"/>
                                         <connections>
-                                            <action selector="bottomAttowButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="q7V-lT-IKW"/>
+                                            <action selector="bottomArrowButtonTouchDownAction:" destination="pw0-Gi-ThV" eventType="touchDown" id="3GO-l9-E7l"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="editingDidEndOnExit" id="0jw-NF-lCj"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchCancel" id="2Tk-gU-NAi"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchDragExit" id="9f8-ef-zxv"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="editingDidEnd" id="Lom-2M-g6M"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchUpOutside" id="b8k-bu-tyx"/>
+                                            <action selector="bottomArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="bzf-PQ-PHF"/>
                                         </connections>
                                     </button>
                                 </subviews>

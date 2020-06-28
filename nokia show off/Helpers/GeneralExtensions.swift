@@ -12,4 +12,9 @@ extension String {
     func nakedNumber()-> String {
         return self.description.replacingOccurrences(of: ",", with: "").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "").replacingOccurrences(of: " ", with: "")
     }
+    
+    func isContainsLetters()-> Bool {
+        let letters = CharacterSet.letters
+        return self.rangeOfCharacter(from: letters) != nil
+    }
 }
