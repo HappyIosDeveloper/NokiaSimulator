@@ -75,10 +75,11 @@ extension ViewController {
     }
     
     @objc func batteryLevelDidChange(_ notification: Notification) {
-        print("batteryLevel: \(batteryLevel)")
+        updateBatteryStatus()
     }
 
     @objc func batteryStateDidChange(_ notification: Notification) {
+        updateBatteryStatus()
         switch batteryState {
         case .unplugged, .unknown:
             print("not charging")
