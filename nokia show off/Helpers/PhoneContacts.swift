@@ -40,7 +40,7 @@ class PhoneContacts {
 extension CNContact {
     
     func getPhone()-> String {
-        return self.phoneNumbers.first?.value.stringValue ?? "No Phone Number"
+        return self.phoneNumbers.first?.value.stringValue.replacingOccurrences(of: " ", with: "") ?? "No Phone Number"
     }
     
     func getName()-> String {

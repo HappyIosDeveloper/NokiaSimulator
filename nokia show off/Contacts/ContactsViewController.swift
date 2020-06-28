@@ -11,6 +11,14 @@ import UIKit
 class ContactsViewController: ViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var topArrowButton: UIButton!
+    @IBAction func topArrowButtonAction(_ sender: Any) {
+        moveToTopContact()
+    }
+    @IBOutlet weak var bottomArrowButton: UIButton!
+    @IBAction func bottomAttowButtonAction(_ sender: Any) {
+        moveToBottomContact()
+    }
     
     lazy var contacts = PhoneContacts.getContacts()
     var selectedIndex = 2
@@ -34,10 +42,48 @@ class ContactsViewController: ViewController {
         tableView.allowsSelection = true
         tableView.selectRow(at: IndexPath(row: selectedIndex, section: 0), animated: true, scrollPosition: .top)
     }
+}
+
+// MARK: - Action Functions
+extension ContactsViewController {
     
     override func endCallButtonAction() {
+        beep()
         let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         switchControllerTo(vc)
+    }
+    
+    override func callButtonAction() {
+        beep()
+        callNumber(contacts[selectedIndex].getPhone())
+    }
+    
+    override func dial(number: Int) {
+        beep()
+    }
+    
+    func moveToTopContact() {
+        beep()
+        if selectedIndex > 0 {
+            selectedIndex -= 1
+            tableView.reloadData()
+            let firstRowIndex = tableView.indexPathsForVisibleRows!.first!.row
+            if firstRowIndex >= selectedIndex-1  {
+                tableView.scrollToRow(at: IndexPath(row: selectedIndex < 1 ? 0 : selectedIndex-1, section: 0), at: .top, animated: false)
+            }
+        }
+    }
+    
+    func moveToBottomContact() {
+        beep()
+        if selectedIndex < contacts.count-1 {
+            selectedIndex += 1
+            tableView.reloadData()
+            let lastRowIndex = tableView.indexPathsForVisibleRows!.last!.row
+            if lastRowIndex <= selectedIndex+1  {
+                tableView.scrollToRow(at: IndexPath(row: selectedIndex+1, section: 0), at: .bottom, animated: false)
+            }
+        }
     }
 }
 

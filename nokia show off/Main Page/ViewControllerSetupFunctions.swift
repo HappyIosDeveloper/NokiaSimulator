@@ -11,7 +11,7 @@ import UIKit
 extension ViewController {
     
     func setupPage() {
-        play("beep")
+        beep()
         screenImageView.layer.cornerRadius = 10
         navigationController?.setNavigationBarHidden(true, animated: true)
         setupBatteryMonitor()

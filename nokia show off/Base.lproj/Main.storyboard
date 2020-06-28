@@ -598,15 +598,30 @@
                                             <constraint firstAttribute="width" secondItem="YxZ-qS-M8B" secondAttribute="height" id="bJq-Rw-9k5"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TZ-Bo-Of8">
+                                        <rect key="frame" x="131" y="0.0" width="112" height="56.5"/>
+                                        <connections>
+                                            <action selector="topArrowButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="wNM-w3-Yp8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-c3-KB5">
+                                        <rect key="frame" x="131" y="56.5" width="112" height="56"/>
+                                        <connections>
+                                            <action selector="bottomAttowButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="q7V-lT-IKW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="qTS-pY-Eo0" firstAttribute="leading" secondItem="fuF-eT-Ahd" secondAttribute="leading" id="1MV-Ev-aGn"/>
                                     <constraint firstItem="aKi-Ny-IIJ" firstAttribute="bottom" secondItem="wWm-dP-BjO" secondAttribute="bottom" id="3vg-17-8au"/>
+                                    <constraint firstItem="1TZ-Bo-Of8" firstAttribute="leading" secondItem="YxZ-qS-M8B" secondAttribute="leading" id="4bC-Aj-t2h"/>
                                     <constraint firstAttribute="bottom" secondItem="wWm-dP-BjO" secondAttribute="bottom" id="6EE-Ff-diz"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="height" secondItem="1TZ-Bo-Of8" secondAttribute="height" id="7ab-7k-PO9"/>
                                     <constraint firstItem="fuF-eT-Ahd" firstAttribute="top" secondItem="LkR-bA-bQh" secondAttribute="top" id="9oK-9s-LE4"/>
                                     <constraint firstItem="aKi-Ny-IIJ" firstAttribute="trailing" secondItem="wWm-dP-BjO" secondAttribute="trailing" id="CL4-J0-t6P"/>
                                     <constraint firstItem="qTS-pY-Eo0" firstAttribute="trailing" secondItem="fuF-eT-Ahd" secondAttribute="trailing" id="Chp-7x-Z8x"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="trailing" secondItem="1TZ-Bo-Of8" secondAttribute="trailing" id="DaC-jp-Jwz"/>
                                     <constraint firstItem="aKi-Ny-IIJ" firstAttribute="top" secondItem="wWm-dP-BjO" secondAttribute="top" id="FA3-wT-anH"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="leading" secondItem="wWm-dP-BjO" secondAttribute="leading" id="N7I-6F-m7y"/>
                                     <constraint firstItem="qTS-pY-Eo0" firstAttribute="bottom" secondItem="fuF-eT-Ahd" secondAttribute="bottom" id="NYx-x4-emt"/>
@@ -614,28 +629,34 @@
                                     <constraint firstAttribute="width" secondItem="Epz-fC-rgH" secondAttribute="height" multiplier="10:3" id="PcN-gO-MYO"/>
                                     <constraint firstItem="aKi-Ny-IIJ" firstAttribute="leading" secondItem="wWm-dP-BjO" secondAttribute="leading" id="Qhb-dX-EBc"/>
                                     <constraint firstItem="D6z-qK-7yt" firstAttribute="bottom" secondItem="UNG-Yf-Btp" secondAttribute="bottom" id="SWS-DG-WdP"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="top" secondItem="1TZ-Bo-Of8" secondAttribute="bottom" id="Sgr-vO-tkt"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="trailing" secondItem="wWm-dP-BjO" secondAttribute="trailing" id="Tet-ez-j2K"/>
                                     <constraint firstItem="YxZ-qS-M8B" firstAttribute="top" secondItem="Epz-fC-rgH" secondAttribute="top" id="U45-Zy-O16"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="width" secondItem="wWm-dP-BjO" secondAttribute="width" id="UDj-Dj-YiG"/>
                                     <constraint firstItem="fuF-eT-Ahd" firstAttribute="height" secondItem="UNG-Yf-Btp" secondAttribute="height" id="XO6-vz-h91"/>
                                     <constraint firstItem="fuF-eT-Ahd" firstAttribute="trailing" secondItem="UNG-Yf-Btp" secondAttribute="trailing" id="XiI-WE-Z2X"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="leading" secondItem="1TZ-Bo-Of8" secondAttribute="leading" id="Y2O-r6-gyl"/>
                                     <constraint firstItem="YxZ-qS-M8B" firstAttribute="centerY" secondItem="Epz-fC-rgH" secondAttribute="centerY" id="ZMG-jK-cWO"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="height" secondItem="wWm-dP-BjO" secondAttribute="height" id="ahX-Ah-neP"/>
                                     <constraint firstItem="fuF-eT-Ahd" firstAttribute="width" secondItem="UNG-Yf-Btp" secondAttribute="width" id="cl9-WU-4b1"/>
                                     <constraint firstAttribute="bottom" secondItem="YxZ-qS-M8B" secondAttribute="bottom" id="daG-Qf-AqQ"/>
                                     <constraint firstItem="D6z-qK-7yt" firstAttribute="trailing" secondItem="UNG-Yf-Btp" secondAttribute="trailing" id="dfN-4b-wis"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="width" secondItem="1TZ-Bo-Of8" secondAttribute="width" id="hXH-Xc-9F7"/>
                                     <constraint firstItem="vlZ-Ul-E8F" firstAttribute="leading" secondItem="LkR-bA-bQh" secondAttribute="leading" id="ham-Hg-aaa"/>
                                     <constraint firstItem="vlZ-Ul-E8F" firstAttribute="top" secondItem="LkR-bA-bQh" secondAttribute="top" id="iLz-00-QGv"/>
                                     <constraint firstItem="D6z-qK-7yt" firstAttribute="leading" secondItem="UNG-Yf-Btp" secondAttribute="leading" id="ibT-pi-Amu"/>
                                     <constraint firstAttribute="trailing" secondItem="fuF-eT-Ahd" secondAttribute="trailing" constant="8.5" id="jxC-sz-xsZ"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="leading" secondItem="Epz-fC-rgH" secondAttribute="leading" id="npI-EI-Cby"/>
+                                    <constraint firstItem="1TZ-Bo-Of8" firstAttribute="top" secondItem="YxZ-qS-M8B" secondAttribute="top" id="oXa-kU-qNY"/>
                                     <constraint firstItem="wWm-dP-BjO" firstAttribute="top" secondItem="LkR-bA-bQh" secondAttribute="bottom" constant="12" id="oaM-3l-Voq"/>
                                     <constraint firstItem="YxZ-qS-M8B" firstAttribute="centerX" secondItem="Epz-fC-rgH" secondAttribute="centerX" id="p9H-uo-OHJ"/>
+                                    <constraint firstItem="BMr-c3-KB5" firstAttribute="bottom" secondItem="YxZ-qS-M8B" secondAttribute="bottom" id="qtx-dq-x3K"/>
                                     <constraint firstItem="fuF-eT-Ahd" firstAttribute="leading" secondItem="UNG-Yf-Btp" secondAttribute="leading" id="sXT-iK-WiZ"/>
                                     <constraint firstItem="vlZ-Ul-E8F" firstAttribute="trailing" secondItem="LkR-bA-bQh" secondAttribute="trailing" id="se6-Sj-4KI"/>
                                     <constraint firstItem="LkR-bA-bQh" firstAttribute="top" secondItem="Epz-fC-rgH" secondAttribute="top" id="t2S-hw-mRj"/>
                                     <constraint firstItem="D6z-qK-7yt" firstAttribute="top" secondItem="UNG-Yf-Btp" secondAttribute="top" id="u3g-uj-Hxl"/>
                                     <constraint firstAttribute="bottom" secondItem="UNG-Yf-Btp" secondAttribute="bottom" id="uFr-9e-cGI"/>
+                                    <constraint firstItem="1TZ-Bo-Of8" firstAttribute="trailing" secondItem="YxZ-qS-M8B" secondAttribute="trailing" id="vkj-QJ-cBC"/>
                                     <constraint firstItem="UNG-Yf-Btp" firstAttribute="top" secondItem="fuF-eT-Ahd" secondAttribute="bottom" constant="12" id="ywn-wq-iUP"/>
                                     <constraint firstItem="qTS-pY-Eo0" firstAttribute="top" secondItem="fuF-eT-Ahd" secondAttribute="top" id="z9X-3K-U6J"/>
                                 </constraints>
@@ -949,12 +970,14 @@
                     </view>
                     <connections>
                         <outlet property="antenaImageView" destination="3XK-6R-klG" id="HmC-G5-tlS"/>
+                        <outlet property="bottomArrowButton" destination="BMr-c3-KB5" id="lM4-HX-zfR"/>
                         <outlet property="centerNokiaLabel" destination="SwF-tO-RWl" id="kAX-g3-jCe"/>
                         <outlet property="contactslabel" destination="ytr-m9-D1r" id="t2m-cT-VXl"/>
                         <outlet property="dialingLabel" destination="rJs-9R-uvl" id="e2G-Ix-1pX"/>
                         <outlet property="menuLabel" destination="KsE-RJ-zRv" id="rs7-yE-Pxm"/>
                         <outlet property="screenImageView" destination="4Ly-Ue-bFL" id="Dpb-jm-Ylk"/>
                         <outlet property="tableView" destination="jcb-Pl-3dc" id="cBc-SG-Dee"/>
+                        <outlet property="topArrowButton" destination="1TZ-Bo-Of8" id="6qU-FT-5ox"/>
                         <outlet property="topClockLabel" destination="ZDb-su-ndQ" id="fKZ-Zc-QJW"/>
                         <outlet property="topLogoImageView" destination="KdZ-aX-Bvc" id="Kqj-7R-Ofc"/>
                         <outletCollection property="batteryImageViews" destination="aT2-wt-1JJ" collectionClass="NSMutableArray" id="LUO-dX-jC8"/>

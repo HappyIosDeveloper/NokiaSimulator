@@ -13,21 +13,21 @@ import AVKit
 extension ViewController {
     
     func leftFunctionButtonAction() {
-        play("beep")
+        beep()
     }
     
     func rightFunctionButtonAction() {
-        play("beep")
+        beep()
         gotoContacts()
     }
     
     @objc func endCallButtonAction() {
-        play("beep")
+        beep()
         showMainScreen()
     }
     
-    func callButtonAction() {
-        play("beep")
+    @objc func callButtonAction() {
+        beep()
         callNumber(dialingLabel.text!)
     }
     
@@ -35,9 +35,10 @@ extension ViewController {
     func gotoContacts() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ContactsViewController") as! ContactsViewController
         switchControllerTo(vc)
+        vc.topClockLabel.text = self.topClockLabel.text!
     }
     
-    func dial(number:Int) {
+    @objc func dial(number:Int) {
         showEmptyScreen()
         switch number {
         case 1...9:
@@ -71,6 +72,10 @@ extension ViewController {
                 }
             }
         }
+    }
+    
+    func beep() {
+        play("beep")
     }
     
     // MARK: - Battery Functions
