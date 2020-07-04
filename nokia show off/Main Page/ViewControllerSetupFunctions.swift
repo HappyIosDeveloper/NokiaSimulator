@@ -64,6 +64,7 @@ extension ViewController {
     // MARK: - Battery Functions
     
     func updateBatteryStatus() {
+        if !dialingLabel.text!.isEmpty { return }
         batteryImageViews = batteryImageViews.sorted(by: {$0.tag < $1.tag})
         switch batteryLevel {
         case 0...0.3:
@@ -97,7 +98,7 @@ extension ViewController {
     }
     
     func playBatteryChargingAnimation(level:Int? = nil) {
-        if antenaImageView.isHidden { return }
+        if !dialingLabel.text!.isEmpty { return }
         if batteryState == .charging {
             if var level = level {
                 if level > 9 { level = 0 }
