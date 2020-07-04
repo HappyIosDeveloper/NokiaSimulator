@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		3812821B24A8E96A00E1A655 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		384DDE57249BC43900601267 /* nokia show off.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nokia show off.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		384DDE57249BC43900601267 /* Nokia Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nokia Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384DDE5A249BC43900601267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384DDE5C249BC43900601267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		384DDE5E249BC43900601267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		384DDE58249BC43900601267 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				384DDE57249BC43900601267 /* nokia show off.app */,
+				384DDE57249BC43900601267 /* Nokia Simulator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			);
 			name = "nokia show off";
 			productName = "nokia show off";
-			productReference = 384DDE57249BC43900601267 /* nokia show off.app */;
+			productReference = 384DDE57249BC43900601267 /* Nokia Simulator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -409,14 +409,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63BQPADX5U;
+				CURRENT_PROJECT_VERSION = 1000;
+				DEVELOPMENT_TEAM = 6F64QLA4FZ;
 				INFOPLIST_FILE = "nokia show off/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "alfredo.app.ios.nokia-show-off";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alfredo.app.ios.nokia;
+				PRODUCT_NAME = "Nokia Simulator";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -427,14 +429,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63BQPADX5U;
+				CURRENT_PROJECT_VERSION = 1000;
+				DEVELOPMENT_TEAM = 6F64QLA4FZ;
 				INFOPLIST_FILE = "nokia show off/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "alfredo.app.ios.nokia-show-off";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alfredo.app.ios.nokia;
+				PRODUCT_NAME = "Nokia Simulator";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

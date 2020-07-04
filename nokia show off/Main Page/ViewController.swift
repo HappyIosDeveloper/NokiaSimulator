@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBOutlet weak var centerNokiaLabel: UILabel!
+    @IBOutlet weak var topCarrierNameLabel: UILabel!
     @IBOutlet weak var topClockLabel: UILabel!
     @IBOutlet weak var antenaImageView: UIImageView!
     @IBOutlet weak var menuLabel: UILabel!

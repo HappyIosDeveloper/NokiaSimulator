@@ -97,6 +97,7 @@ extension ViewController {
     }
     
     func playBatteryChargingAnimation(level:Int? = nil) {
+        if antenaImageView.isHidden { return }
         if batteryState == .charging {
             if var level = level {
                 if level > 9 { level = 0 }
