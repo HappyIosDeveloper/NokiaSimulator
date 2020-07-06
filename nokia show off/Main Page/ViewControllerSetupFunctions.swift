@@ -21,12 +21,16 @@ extension ViewController {
     
     func showMainScreen() {
         dialedNumer?.removeAll()
-        updateBatteryStatus()
+        if batteryState != .charging {
+            updateBatteryStatus()
+        }
         antenaImageView.isHidden = false
         centerNokiaLabel.isHidden = false
         menuLabel.isHidden = false
         contactslabel.isHidden = false
-        updateBatteryStatus()
+        if batteryState != .charging {
+            updateBatteryStatus()
+        }
     }
     
     func showEmptyScreen() {

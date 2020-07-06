@@ -17,6 +17,13 @@ extension ViewController {
     }
     
     func rightFunctionButtonAction() {
+        if self.isKind(of: ContactsViewController.self) {
+            return
+        } else {
+            if !dialingLabel.text!.isEmpty {
+                return
+            }
+        }
         beep()
         gotoContacts()
     }

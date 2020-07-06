@@ -11,6 +11,7 @@ import UIKit
 extension UIViewController {
     
     func callNumber(_ phoneNumber: String) {
+        if phoneNumber.isEmpty { return }
         if let url = URL(string: "telprompt://\(phoneNumber)") {
             let application = UIApplication.shared
             guard application.canOpenURL(url) else {

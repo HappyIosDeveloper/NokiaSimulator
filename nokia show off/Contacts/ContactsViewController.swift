@@ -89,7 +89,9 @@ extension ContactsViewController {
             tableView.reloadData()
             let lastRowIndex = tableView.indexPathsForVisibleRows!.last!.row
             if lastRowIndex <= selectedIndex+1  {
-                tableView.scrollToRow(at: IndexPath(row: selectedIndex+1, section: 0), at: .bottom, animated: false)
+                if selectedIndex < contacts.count-1 {
+                    tableView.scrollToRow(at: IndexPath(row: selectedIndex+1, section: 0), at: .bottom, animated: false)
+                }
             }
         }
     }
