@@ -9,6 +9,7 @@
 #### Features:
     - Functional connect / discunnet / dial / arrows buttons.
     - Active signal indicator.
+    - Active Clock.
     - Active battery indicator with chargig status.
     - Call the dialed phone number.
     - Showing contacts and call the selected contact.
