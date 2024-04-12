@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuLabel: UILabel!
     @IBOutlet weak var contactslabel: UILabel!
     @IBOutlet weak var topLogoImageView: UIImageView!
+    @IBOutlet weak var topLogoTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var dialingLabel: UILabel!
     @IBOutlet weak var screenImageView: UIImageView!
     @IBAction func DialPadButtonAction(_ sender: Any) {

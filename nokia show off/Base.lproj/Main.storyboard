@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fex-D3-M4a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fex-D3-M4a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +16,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="nokia_show_off" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Nokia_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +84,7 @@
                                             <constraint firstAttribute="width" secondItem="w0j-tW-oyG" secondAttribute="height" multiplier="2:1" id="iZa-bR-215"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-IJ-5CB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-IJ-5CB">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="50.5"/>
                                         <connections>
                                             <action selector="leftFunctionButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDU-1e-Kce"/>
@@ -92,7 +93,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="answer" translatesAutoresizingMaskIntoConstraints="NO" id="2vw-5S-QCs">
                                         <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-1e-dPv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dct-1e-dPv">
                                         <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
                                         <connections>
                                             <action selector="callButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaE-Pd-YBj"/>
@@ -104,7 +105,7 @@
                                             <constraint firstAttribute="width" secondItem="ngO-44-plV" secondAttribute="height" multiplier="2:1" id="Ks4-M1-QXz"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcX-pA-B3x">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcX-pA-B3x">
                                         <rect key="frame" x="265.5" y="0.0" width="100" height="50.5"/>
                                         <connections>
                                             <action selector="rightFunctionButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PER-Mj-Y8f"/>
@@ -113,7 +114,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="end" translatesAutoresizingMaskIntoConstraints="NO" id="xec-Ze-BBb">
                                         <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGO-Eq-F5f">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGO-Eq-F5f">
                                         <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
                                         <connections>
                                             <action selector="endCallButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRN-j9-VcQ"/>
@@ -249,7 +250,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AYs-NT-B3c">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc6-rO-qRF">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc6-rO-qRF">
                                                         <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="SuU-PC-uih"/>
@@ -258,7 +259,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAf-a2-daa"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-CY-zQ4">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-CY-zQ4">
                                                         <rect key="frame" x="134.5" y="14" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="X8f-sE-xBT"/>
@@ -267,7 +268,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAh-3U-Hl9"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82n-pU-Jwp">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82n-pU-Jwp">
                                                         <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="FeH-iZ-MUB"/>
@@ -281,7 +282,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-gJ-iwF">
                                                 <rect key="frame" x="0.0" y="78.5" width="374" height="68"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kum-yY-LEX">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kum-yY-LEX">
                                                         <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="RZm-rI-HVY"/>
@@ -290,7 +291,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxv-yy-SWs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-FV-cfG">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-FV-cfG">
                                                         <rect key="frame" x="134.5" y="14" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Hnp-ah-MTJ"/>
@@ -299,7 +300,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhV-hj-9SY"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-8I-QTr">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-8I-QTr">
                                                         <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="YXg-qP-4Gf"/>
@@ -313,7 +314,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ttw-eB-9cb">
                                                 <rect key="frame" x="0.0" y="156.5" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-Fb-4dK">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTf-Fb-4dK">
                                                         <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="VGk-7e-Rr8"/>
@@ -322,7 +323,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yE-ug-pel"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jv-zk-bnI">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jv-zk-bnI">
                                                         <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="MDn-NQ-0Bv"/>
@@ -331,7 +332,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DcN-S9-muj"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-j3-pzu">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-j3-pzu">
                                                         <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Fcg-FU-r1d"/>
@@ -345,7 +346,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="alS-Vu-Nia">
                                                 <rect key="frame" x="0.0" y="235" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-at-60P">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-at-60P">
                                                         <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="SBf-x8-E5F"/>
@@ -354,7 +355,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccx-1B-rOt"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwy-ML-mOY">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwy-ML-mOY">
                                                         <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="LyG-RD-b1M"/>
@@ -363,7 +364,7 @@
                                                             <action selector="DialPadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Jq-nT-0wI"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-3u-96i">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-3u-96i">
                                                         <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="z5g-Fl-1EH"/>
@@ -426,6 +427,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uw2-Rr-ZVt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1nu-5x-DX9"/>
@@ -460,7 +462,6 @@
                             <constraint firstItem="LoS-b4-oDf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="firstBaseline" constant="10" id="vf0-Nk-wZl"/>
                             <constraint firstItem="gsB-kw-KAL" firstAttribute="top" secondItem="MZo-D5-hVk" secondAttribute="bottom" constant="10" id="wt7-bg-q7m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="44C-lb-a2J"/>
                     <connections>
@@ -472,6 +473,7 @@
                         <outlet property="screenImageView" destination="MZo-D5-hVk" id="gIe-AQ-du1"/>
                         <outlet property="topClockLabel" destination="pDd-e2-doh" id="k5F-Aa-206"/>
                         <outlet property="topLogoImageView" destination="LoS-b4-oDf" id="6Ve-L1-40U"/>
+                        <outlet property="topLogoTopConstraint" destination="vf0-Nk-wZl" id="f36-OA-Xtr"/>
                         <outletCollection property="batteryImageViews" destination="uZ8-o5-HvW" collectionClass="NSMutableArray" id="WHY-zB-NeV"/>
                         <outletCollection property="batteryImageViews" destination="xQE-lg-HqS" collectionClass="NSMutableArray" id="vSC-Vt-hZM"/>
                         <outletCollection property="batteryImageViews" destination="RV7-Ah-3CZ" collectionClass="NSMutableArray" id="8IN-Hh-uKA"/>
@@ -488,7 +490,7 @@
         <!--Contacts View Controller-->
         <scene sceneID="gPM-Zo-jil">
             <objects>
-                <viewController storyboardIdentifier="ContactsViewController" id="pw0-Gi-ThV" customClass="ContactsViewController" customModule="nokia_show_off" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsViewController" id="pw0-Gi-ThV" customClass="ContactsViewController" customModule="Nokia_Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VGI-nS-Bcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +558,7 @@
                                             <constraint firstAttribute="width" secondItem="LkR-bA-bQh" secondAttribute="height" multiplier="2:1" id="pbZ-Oy-vw5"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-Ul-E8F">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-Ul-E8F">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="50.5"/>
                                         <connections>
                                             <action selector="leftFunctionButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="CTe-WY-MpC"/>
@@ -565,7 +567,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="answer" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-dP-BjO">
                                         <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKi-Ny-IIJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKi-Ny-IIJ">
                                         <rect key="frame" x="0.0" y="62.5" width="100" height="50"/>
                                         <connections>
                                             <action selector="callButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="ERB-Sb-eKe"/>
@@ -577,7 +579,7 @@
                                             <constraint firstAttribute="width" secondItem="fuF-eT-Ahd" secondAttribute="height" multiplier="2:1" id="qcz-xc-3sQ"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-pY-Eo0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-pY-Eo0">
                                         <rect key="frame" x="265.5" y="0.0" width="100" height="50.5"/>
                                         <connections>
                                             <action selector="rightFunctionButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="JL2-R2-02D"/>
@@ -586,7 +588,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="end" translatesAutoresizingMaskIntoConstraints="NO" id="UNG-Yf-Btp">
                                         <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6z-qK-7yt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6z-qK-7yt">
                                         <rect key="frame" x="265.5" y="62.5" width="100" height="50"/>
                                         <connections>
                                             <action selector="endCallButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="ftS-q5-kuW"/>
@@ -598,7 +600,7 @@
                                             <constraint firstAttribute="width" secondItem="YxZ-qS-M8B" secondAttribute="height" id="bJq-Rw-9k5"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TZ-Bo-Of8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TZ-Bo-Of8">
                                         <rect key="frame" x="131" y="0.0" width="112" height="56.5"/>
                                         <connections>
                                             <action selector="topArrowButtonTouchDownAction:" destination="pw0-Gi-ThV" eventType="touchDown" id="zEN-Tp-W6m"/>
@@ -608,7 +610,7 @@
                                             <action selector="topArrowButtonTouchUpAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="uKj-fp-5HP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-c3-KB5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-c3-KB5">
                                         <rect key="frame" x="131" y="56.5" width="112" height="56"/>
                                         <connections>
                                             <action selector="bottomArrowButtonTouchDownAction:" destination="pw0-Gi-ThV" eventType="touchDown" id="3GO-l9-E7l"/>
@@ -753,7 +755,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-wL-L67">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIr-U6-XqR">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIr-U6-XqR">
                                                         <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="hCI-So-BX7"/>
@@ -762,7 +764,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="p6X-pB-Dxe"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNV-1H-ZN0">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNV-1H-ZN0">
                                                         <rect key="frame" x="134.5" y="14" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="hAO-la-g1Y"/>
@@ -771,7 +773,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="4b8-wx-Egs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-Cy-6EX">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-Cy-6EX">
                                                         <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="x2t-tg-HUg"/>
@@ -785,7 +787,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kse-ri-m7E">
                                                 <rect key="frame" x="0.0" y="78.5" width="374" height="68"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-KW-Ekw">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-KW-Ekw">
                                                         <rect key="frame" x="0.0" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Q9m-1j-ff5"/>
@@ -794,7 +796,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="kjs-1f-HIp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0n-Yd-i4c">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0n-Yd-i4c">
                                                         <rect key="frame" x="134.5" y="14" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="hlR-xD-6Sd"/>
@@ -803,7 +805,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="VDL-GK-sdA"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC3-uN-VGA">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC3-uN-VGA">
                                                         <rect key="frame" x="269.5" y="14" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="UjF-DY-xUP"/>
@@ -817,7 +819,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4Om-Ja-aTf">
                                                 <rect key="frame" x="0.0" y="156.5" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn6-7V-vgR">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn6-7V-vgR">
                                                         <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="4D9-5i-DfF"/>
@@ -826,7 +828,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="c4r-0S-NJR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKv-lM-XHV">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKv-lM-XHV">
                                                         <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="LEF-9F-anP"/>
@@ -835,7 +837,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="cYQ-5i-Zhd"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-4W-3Ab">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-4W-3Ab">
                                                         <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="9uY-ek-VHx"/>
@@ -849,7 +851,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fDP-j8-egs">
                                                 <rect key="frame" x="0.0" y="235" width="374" height="68.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTG-gO-Dca">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTG-gO-Dca">
                                                         <rect key="frame" x="0.0" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Lt7-dl-cPW"/>
@@ -858,7 +860,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="LVa-BM-MWO"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-Fh-Ehy">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-Fh-Ehy">
                                                         <rect key="frame" x="134.5" y="14.5" width="105" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Vws-7K-8HB"/>
@@ -867,7 +869,7 @@
                                                             <action selector="DialPadButtonAction:" destination="pw0-Gi-ThV" eventType="touchUpInside" id="WKa-LE-xR3"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-2l-Abl">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-2l-Abl">
                                                         <rect key="frame" x="269.5" y="14.5" width="104.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="S54-wH-v7C"/>
@@ -938,6 +940,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="EaG-xB-Hvh"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KdZ-aX-Bvc" firstAttribute="leading" secondItem="EaG-xB-Hvh" secondAttribute="leading" constant="50" id="4sb-7m-uNA"/>
@@ -976,7 +979,6 @@
                             <constraint firstItem="SwF-tO-RWl" firstAttribute="centerY" secondItem="4Ly-Ue-bFL" secondAttribute="centerY" id="xOD-XQ-PYU"/>
                             <constraint firstItem="EaG-xB-Hvh" firstAttribute="trailing" secondItem="KdZ-aX-Bvc" secondAttribute="trailing" constant="50" id="xgi-JB-swg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EaG-xB-Hvh"/>
                     </view>
                     <connections>
                         <outlet property="antenaImageView" destination="3XK-6R-klG" id="HmC-G5-tlS"/>
@@ -1009,7 +1011,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fex-D3-M4a" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pfx-gA-6Q0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

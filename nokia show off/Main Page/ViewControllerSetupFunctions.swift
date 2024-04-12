@@ -14,9 +14,16 @@ extension ViewController {
         beep()
         screenImageView.layer.cornerRadius = 10
         navigationController?.setNavigationBarHidden(true, animated: true)
+        handleTopNokiaLogoForDynamicIsland()
         setupBatteryMonitor()
         updateBatteryStatus()
         setupTopClock()
+    }
+    
+    private func handleTopNokiaLogoForDynamicIsland() {
+        if UIDevice.current.hasDynamicIsland {
+            topLogoTopConstraint.constant = 30
+        }
     }
     
     func showMainScreen() {
